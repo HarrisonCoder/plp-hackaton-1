@@ -1,0 +1,150 @@
+/* layout styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
+    width: 100vw;
+    background-image: url('./Resources/sky.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+
+/* navigation bar styles */
+.navbar {
+    background-color: aqua;
+    height: 70px;
+    padding: 20px;  
+}
+.navbar ul {
+  list-style: none;
+  text-align: center;
+}
+.navbar ul li {
+    display: inline;
+  margin: 0 30px;
+ }
+
+ /* horizontal alignment of picture and my brief statement */
+.container {
+    display: flex;
+    margin: 20px;
+    width: 100%;
+    height: auto;
+}
+
+/* style my picture */
+.img1 {
+    margin-left: 850px;
+    border-radius: 50px;
+    position: absolute;
+   
+}
+
+/* Skills on computer desktop styles */
+.container_two img {
+    width: 500px;
+    height: 320px;
+    max-width: 100%;
+    position: relative;
+    margin-left: 100px;
+    border-radius: 0px 50px 50px 0px;
+    
+}
+
+.container_text {
+    position: absolute;
+    top: 97%;
+   margin-left: 250px;
+   margin-top: -110px;
+
+
+}
+
+h3 {
+    background-color: blue;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.objectives {
+    margin-left: 20px;
+}
+
+
+/* font styles */
+.container .myself h2 {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+}
+
+/* stylying my name */
+.name {
+    font-size: 70px;
+    margin-left: 400px;
+    color: blue;
+  font-weight: bolder;
+}
+
+.brief {
+    font-size: 22px;
+    max-width: 600px;
+    color: brown;
+}
+
+/* align desktop computer image and my goals */
+#aims {
+    display: inline-block;
+   
+}
+.goal {font-size: 20px;
+ 
+}
+
+footer{
+    background-color: aliceblue;
+    text-align: center;
+}
+
+@media (max-width: 768px){
+    .container {
+        display: block;
+    }
+    .img1 {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .container_two img {
+        margin-left: 0;
+        border-radius: 50px;
+    }
+    .container_text {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .container .myself h2 {
+        font-size: 20px;
+    }
+    .name {
+        font-size: 40px;
+        margin-left: 0;
+    }
+    .brief {
+        font-size: 16px;
+        max-width: 100%;
+    }
+    .goal {
+        font-size: 16px;
+    }
+    .navbar ul li {
+        margin: 0 10px;
+    }
+}
